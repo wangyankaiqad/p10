@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body></body>
+
+</html>
+<script>
+    // ES6引入rest参数，用于获取函数的参数，用来代替arguments
+
+    // function data() {
+    //     console.log(arguments);
+    // }
+    // data('1', '2', '3')
+
+    // function adta(a, b, ...args) {
+    //     console.log(a)//1
+    //     console.log(b)//2
+    //     console.log(args)// [3, 4, 5, 6]
+    // }
+    // adta(1, 2, 3, 4, 5, 6)
+
+    // es6引入rest参数，用于获取函数的实参，用来代替arguments
+
+    // **1.es5获取实参的方法**
+    function data() {
+        console.log(arguments)
+    }
+    data('1', '2', '3')
+
+    // 在函数上不必传入arguments
+
+    // 2.rest参数**  
+    function data(...args) {
+        console.log(args)
+    }
+    data('1', '2', '3')
+
+    // 在函数上要传入(...args)
+
+    // **3.特殊情况   ...args要放到参数的最后**
+    function adta(a, b, ...args) {
+        console.log(a) //1
+        console.log(b) //2
+        console.log(args) // [3, 4, 5, 6]
+    }
+    adta(1, 2, 3, 4, 5, 6)
+</script>

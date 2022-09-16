@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 500px;
+            height: 500px;
+            background-color: pink;
+            display: flex;
+        }
+
+        .box div {
+            width: 600px;
+            height: 200px;
+            background-color: red;
+            border: 2px solid black;
+            /* 默认是1 */
+            flex-shrink: 1;
+            /* 如果是0的话 就会显示出盒子原来的尺寸*/
+            /* flex-shrink: 0; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="min1"></div>
+        <div class="min2"></div>
+    </div>
+</body>
+
+</html>
+<script>
+    
+</script>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+<script>
+    const p = new Promise(function (resolve, reject) {
+        // 成功
+        setTimeout(() => {
+            let data = '我是成功返回的'
+            resolve(data)
+        })
+
+        // 失败
+        // setTimeout(() => {
+        //     let data = '我是失败返回的'
+        //     resolve(data)
+        // })
+    })
+    p.then(res => {
+        console.log(res);
+    }).catch((err) => {
+        console.log(err);
+    })
+</script>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+<script>
+    // 数组的结构赋值
+    const F4 = ['黑', '白', '绿', '蓝']
+    let [hei, bai, lv, lan] = F4
+    console.log(hei, '1');
+    console.log(bai, '2');
+    console.log(lv, '3');
+    console.log(lan, '4');
+    // 对象的解构赋值
+    // 对象的解构赋值可以单独解构  数组不能进行单独解构
+    const zhao = {
+        name: '赵',
+        age: '56',
+        like: function () {
+            console.log('喜欢演小品');
+        }
+    }
+    let {
+        name,
+        age,
+        like
+    } = zhao
+    console.log(name, '5');
+    console.log(age, '6');
+    console.log(like, '7');
+</script>

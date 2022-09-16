@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+<script>
+    //平常的传参
+    function age(a = 1, b = [], c) {
+        console.log(a); //1
+        console.log(b); //  []
+        console.log(c); //  undefined
+    }
+    age()
+
+
+
+
+    //解构赋值的传参   对象传参
+    function age1({
+        a = 1,
+        b,
+        c
+    }) {
+        console.log(a);
+        console.log(b);
+        console.log(c);
+    }
+    let obj = {
+        a: 1,
+        b: 2,
+        c: 3
+    }
+    age1(obj) //可以直接获取到其中的数据   数字和这个差不多 一样
+
+
+
+    //解构赋值的传参  数组传参
+    function age2([a = 1, b, c]) {
+        console.log(a);
+        console.log(b);
+        console.log(c);
+    }
+    age2([1, 2, 3]) //可以直接获取到其中的数据   数字和这个差不多 一样
+</script>

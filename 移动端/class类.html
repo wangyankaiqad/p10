@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+</body>
+
+</html>
+<script>
+    // class potin {
+    //     constructor(x, y) {
+    //         this.x = x,
+    //             this.y = y
+    //     }
+    //     toString() {
+    //         return `${this.x},${this.y}`
+    //     }
+
+    // }
+    // let ps = new potin()
+    // console.log(ps(1,2));
+
+    function phone(x, y) {
+        this.x = x;
+        this.y = y
+    }
+    // 添加方法
+    phone.prototype.call = function () {
+        console.log('我可以打电话了');
+    }
+    // 实例化对象
+    let Huawei = new phone('12', 3000)
+    Huawei.call()
+    console.log(Huawei);
+
+
+    // class类
+    class Shouji {
+        constructor(x, y) {
+            this.x = x
+            this.y = y
+        }
+        // 方法必须使用该语法，不能使用es5的对象完整形式
+        call() {
+            console.log('12312312312');
+        }
+    }
+    let onePlu = new Shouji('1', 1999);
+    console.log(onePlu);
+</script>

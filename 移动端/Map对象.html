@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+<script>
+    const map = new Map([
+        ['name', '张三'],
+        ['title', 'hello'],
+    ])
+    console.log(map.size);//长度   2
+    console.log(map.get('name'));// 获取键值 张三
+    console.log(map.has('title'));//判断存不存在 true
+    console.log(map.delete('title'));//删除当前对象中的属性 true
+    console.log(map.clear());//清空对象   undefined
+</script>
